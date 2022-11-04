@@ -1,0 +1,7 @@
+Introduction to Ansible Builder
+https://www.ansible.com/blog/introduction-to-ansible-builder
+
+#commands in order of appearance
+pip install ansible-builder
+ansible-builder build --tag my_first_ee_image --container-runtime docker
+ansible-runner playbook --container-image=my_first_ee_image test.yml
